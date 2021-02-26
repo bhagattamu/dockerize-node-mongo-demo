@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // connecting mongodb
-mongoose.connect("mongodb://localhost/testdb");
+mongoose.connect("mongodb://mongo/testdb");
 
 app.use("/", express.static("html"));
 
